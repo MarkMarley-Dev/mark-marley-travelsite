@@ -107,3 +107,27 @@ body {
   margin-right: auto;
   margin-left: 2rem;
 }
+
+/* Recommendation Section */
+
+.recommendations-title {
+  color: var(--clr-blue);
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+.recommendations-section {
+  padding: 2rem 5rem;
+  display: flex;
+  max-height: 500px;
+  justify-content: space-evenly;
+}
+
+.recommendation-cards {
+  padding-top: 1rem;
+  justify-content: space-between;
+  max-width: 300px;
+  min-height: 250px;
+  max-height: 400px;
+  border-radius: 20px;
+}
