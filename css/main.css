@@ -1,0 +1,109 @@
+/* root styles */
+
+:root {
+  --clr-white: #ffffff;
+  --clr-blue: #335576;
+  --clr-orange: #db7a4e;
+  --clr-cream: #fefaf5;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header Section */
+
+.logo-wordmark {
+  color: var(--clr-blue);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.nav-list {
+  background: #ffffff;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Orange underline with hover. With bottom padding */
+.nav-item a:hover {
+  padding-bottom: 2px;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+  color: var(--clr-orange);
+  width: fit-content;
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+/* Hero section */
+
+.hero {
+  padding: 4rem 2rem;
+  display: flex;
+  background-color: var(--clr-cream);
+  text-align: left;
+  margin: 0 auto;
+}
+
+.hero-slogan {
+  color: var(--clr-blue);
+  font-size: 2.7rem;
+  padding-bottom: 2rem;
+}
+
+.hero-paragraph-text {
+  color: var(--clr-blue);
+  padding-bottom: 2rem;
+  line-height: 1.4rem;
+}
+
+.get-started-btn {
+  background-color: var(--clr-orange);
+  color: var(--clr-white);
+  font-size: 1.2rem;
+  font-weight: 50;
+  min-width: 120px;
+  min-height: 25px;
+  border-color: var(--clr-orange);
+  border: none;
+  border-radius: 100px;
+}
+
+.hero-img {
+  max-width: 300px;
+  max-height: 300px;
+  justify-content: flex-end;
+}
+
+.hero-information {
+  width: fit-content;
+  margin-right: auto;
+  margin-left: 2rem;
+}
