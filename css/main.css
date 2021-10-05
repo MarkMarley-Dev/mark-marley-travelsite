@@ -114,9 +114,10 @@ body {
   color: var(--clr-blue);
   align-items: flex-start;
   padding-top: 2rem;
+  padding-left: 4rem;
 }
 
-.recommendations-section {
+.recommendation-card-div {
   padding: 2rem 5rem;
   display: flex;
   max-height: 500px;
