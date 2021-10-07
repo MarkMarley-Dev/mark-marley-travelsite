@@ -1,6 +1,61 @@
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* root styles */
+
+*,
+*::after,
+*::before {
+  --clr-white: #ffffff;
+  --clr-blue: #335576;
+  --clr-orange: #db7a4e;
+  --clr-cream: #fefaf5;
+  font-size: 10px;
+  box-sizing: border-box;
 }
+
+/* Header Section */
+
+.logo__wordmark {
+  color: var(--clr-blue);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.nav__list {
+  background: #ffffff;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.nav__item {
+  list-style: none;
+  margin-right: 4rem;
+  margin-left: 2rem;
+  font-size: 1.6rem;
+}
+.nav__item a {
+  color: black;
+}
+
+/* Orange underline with hover. With bottom padding */
+.nav__item a:hover,
+.current__page {
+  padding-bottom: 2px;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+  color: var(--clr-orange);
+  width: fit-content;
+}
+
+.nav__item:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+/* Card Section */
+
 .card-section {
   box-sizing: border-box;
   width: 100%;

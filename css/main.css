@@ -1,29 +1,14 @@
 /* root styles */
 
-:root {
+*,
+*::after,
+*::before {
   --clr-white: #ffffff;
   --clr-blue: #335576;
   --clr-orange: #db7a4e;
   --clr-cream: #fefaf5;
   font-size: 10px;
   box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  max-width: 1280px;
-}
-
-.clr__orange {
-  color: var(--clr-orange);
 }
 
 /* Header Section */
@@ -41,6 +26,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  margin: 5px 0;
 }
 
 .nav__item {
@@ -258,4 +244,8 @@ a:link {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+}
+
+.clr__orange {
+  color: var(--clr-orange);
 }
