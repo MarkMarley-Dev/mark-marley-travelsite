@@ -12,7 +12,6 @@
 }
 
 /* Header Section */
-
 .logo__wordmark {
   color: var(--clr-blue);
   font-size: 1.8rem;
@@ -60,7 +59,7 @@
   padding: 4rem 2rem;
   display: flex;
   width: 1280px;
-  height: 500px;
+  height: 400px;
   background-color: var(--clr-cream);
   text-align: left;
 }
@@ -108,66 +107,60 @@
 
 /* Recommendation Section */
 
-.recommendations__title {
-  color: var(--clr-blue);
-  align-items: flex-start;
-  font-size: 2.6rem;
-  padding-top: 2rem;
-  padding-left: 3rem;
-}
-
-.recommendation__card-div {
-  display: flex;
-  padding: 25px 125px;
-
-  justify-content: space-evenly;
-}
-
-.recommendation__cards {
-  display: flex;
-  padding-top: 1rem;
-  width: 300px;
-  height: 550px;
-  border-radius: 5px;
+.cards {
+  height: 350px;
+  width: 220px;
+  background: white;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  border-radius: 5px;
+  border-top: 50px;
+  border-right: 50px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.recommendation__cards-hawaii {
+.card__container {
   display: flex;
+  justify-content: space-between;
+  background-position: center;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 50px 130px 0px 130px;
+  padding-bottom: 75px;
+}
+
+.card__hawaii {
   background-image: url(../assets/2.0-Assets/Images/hawaii.jpg);
-  background-size: 100% 100%;
-  padding: 0 50px 0 50px;
-  max-width: 300px;
-  max-height: 550px;
+  background-size: cover;
+  background-position: center;
 }
 
-.recommendation__cards-iceland {
-  display: flex;
+.card__iceland {
   background-image: url(../assets/2.0-Assets/Images/iceland.jpg);
-  background-size: 100% 100%;
-  max-width: 300px;
-  max-height: 550px;
+  background-size: cover;
+  background-position: center;
 }
 
-.recommendation__cards-greece {
-  display: flex;
+.card__greece {
   background-image: url(../assets/2.0-Assets/Images/greece.jpg);
-  background-size: 100% 100%;
-  max-width: 300px;
-  max-height: 550px;
+  background-size: cover;
+  background-position: center;
 }
+/* Informtation in the cards */
 
-.recommendation__location-title {
+.card__title {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-bottom: 2rem;
-  padding-left: 16rem;
-  font-size: 2.9rem;
+  padding-top: 280px;
+  padding-left: 9rem;
+  font-size: 2.2rem;
   color: var(--clr-white);
 }
 
-.recommendation__location-title-hawaii {
+.card__title-hawaii {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
