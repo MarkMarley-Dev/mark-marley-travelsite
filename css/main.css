@@ -45,17 +45,17 @@ body {
 
 .nav-item {
   list-style: none;
-  margin-right: 2rem;
-  padding: 0 2rem;
-  font-size: 1.2rem;
+  margin-right: 4rem;
+  margin-left: 2rem;
+  font-size: 1.6rem;
 }
 .nav-item a {
-  text-decoration: none;
   color: black;
 }
 
 /* Orange underline with hover. With bottom padding */
-.nav-item a:hover {
+.nav-item a:hover,
+.current__page {
   padding-bottom: 2px;
   border-bottom-style: solid;
   border-bottom-width: 0.2rem;
@@ -73,38 +73,44 @@ body {
 .hero {
   padding: 4rem 2rem;
   display: flex;
+  width: 1280px;
+  height: 500px;
   background-color: var(--clr-cream);
   text-align: left;
-  margin: 0 auto;
 }
 
 .hero-slogan {
   color: var(--clr-blue);
-  font-size: 2.7rem;
+  font-size: 4rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 .hero-paragraph-text {
   color: var(--clr-blue);
   padding-bottom: 2rem;
-  line-height: 1.4rem;
+  font-weight: 0;
+  line-height: 2.4rem;
+  font-size: 1.7rem;
 }
 
 .get-started-btn {
   background-color: var(--clr-orange);
   color: var(--clr-white);
-  font-size: 1.2rem;
-  font-weight: 50;
-  min-width: 120px;
-  min-height: 25px;
+  font-size: 1.7rem;
+  font-weight: 0;
+  min-width: 140px;
+  min-height: 35px;
   border-color: var(--clr-orange);
   border: none;
   border-radius: 100px;
 }
 
 .hero-img {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 550px;
+  max-height: 400px;
+  padding-right: 50px;
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -119,8 +125,9 @@ body {
 .recommendations-title {
   color: var(--clr-blue);
   align-items: flex-start;
+  font-size: 2.6rem;
   padding-top: 2rem;
-  padding-left: 4rem;
+  padding-left: 3rem;
 }
 
 .recommendation-card-div {
@@ -169,8 +176,8 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   padding-bottom: 2rem;
-  padding-left: 20rem;
-  font-size: 1.8rem;
+  padding-left: 16rem;
+  font-size: 2.9rem;
   color: var(--clr-white);
 }
 
@@ -179,8 +186,8 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   padding-bottom: 2rem;
-  padding-left: 16rem;
-  font-size: 1.8rem;
+  padding-left: 12rem;
+  font-size: 2.9rem;
   color: var(--clr-white);
 }
 
@@ -208,12 +215,13 @@ a:link {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding-right: 100px;
+  padding-right: 125px;
 }
 
 .footer__hours {
   display: flex;
   flex-direction: column;
+  padding-right: 50px;
 }
 .footer__hours--weekend {
   display: flex;
