@@ -37,11 +37,19 @@
 }
 .nav__item a {
   color: black;
+  text-decoration: none;
+}
+
+.active__page {
+  padding-bottom: 2px;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+  color: var(--clr-orange);
+  width: fit-content;
 }
 
 /* Orange underline with hover. With bottom padding */
-.nav__item a:hover,
-.current__page {
+.nav__item a:hover {
   padding-bottom: 2px;
   border-bottom-style: solid;
   border-bottom-width: 0.2rem;
@@ -56,7 +64,29 @@
 
 /* Card Section */
 
-.card-section {
+/* Destination titles */
+
+.card__destination {
+  font-size: 6rem;
+  padding-left: 0px;
+  justify-content: flex-start;
+  color: var(--clr-white);
+}
+
+.cards {
+  height: 350px;
+  width: 220px;
+  background: white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  border-radius: 5px;
+  border-top: 50px;
+  flex-direction: column;
+  justify-content: space-around;
+
+  align-items: center;
+}
+.card__section-hawaii {
   box-sizing: border-box;
   width: 100%;
   height: 600px;
@@ -68,16 +98,50 @@
   padding-top: 50px;
   padding: 150px 75px 30px 75px;
 }
-
-.cards {
-  height: 350px;
-  width: 220px;
-  background: white;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+.card__section-iceland {
+  box-sizing: border-box;
+  width: 100%;
+  height: 600px;
+  background-image: url(../assets/2.0-Assets/Images/iceland.jpg);
+  background-size: 100% 100%;
+  background-position: center;
   display: flex;
-  border-radius: 5px;
-  padding-top: 0;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding: 150px 75px 30px 75px;
+}
+.card__section-greece {
+  height: 600px;
+  background-image: url(../assets/2.0-Assets/Images/greece.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card__container {
+  display: flex;
+  justify-content: space-between;
+  background-position: center;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 50px 200px 0px 200px;
+}
+
+/* Informtation in the cards */
+
+.card__iteniery-day {
+  display: flex;
+  font-size: 1.5rem;
+  display: flex;
+  padding-bottom: 2px;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+  padding: 0 60px;
+  width: fit-content;
+}
+
+.card__iteniery-activity {
+  font-size: 1.2rem;
+  background-color: var(--clr-cream);
+  width: fit-content;
+  padding: 10px 60px;
 }
